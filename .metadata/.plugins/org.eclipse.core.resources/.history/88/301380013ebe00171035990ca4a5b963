@@ -1,0 +1,29 @@
+package learn_jframe;
+
+import java.awt.Color;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class First_Jframe {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		JFrame frm=new JFrame("This is a test!");             //实例化一个窗体  
+        frm.setSize(400, 800);                                //设置大小  
+        frm.setLocation(150, 150);                            //设置窗体位置  
+         
+        JPanel myPane=new JPanel();                  //实例化一个面板  
+        frm.setContentPane(myPane);                  //在窗体中加入面板  like .add
+        myPane.setBackground(Color.YELLOW);          //设置面板背景色  
+          
+        JButton jb1= new JButton("算法");            //实例化一个按钮            
+        myPane.add(jb1);                             //在面板中加入按钮  
+        
+        
+        frm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);   //设置默认关闭操作  
+        frm.setVisible(true);                                 //设置是否可见  
+	}
+
+}

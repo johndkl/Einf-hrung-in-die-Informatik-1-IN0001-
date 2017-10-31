@@ -1,0 +1,7 @@
+package learn_jframe;
+
+import javax.swing.JFrame;
+
+public class MyJrame extends JFrame {
+
+}

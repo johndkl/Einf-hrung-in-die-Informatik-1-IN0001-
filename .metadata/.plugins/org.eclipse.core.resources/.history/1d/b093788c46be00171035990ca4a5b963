@@ -1,0 +1,37 @@
+package learn_jframe;
+
+import javax.swing.JFrame;
+
+public class Learn_setDefaultCloseOperation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		  //定义一个窗体对象f，窗体名称为"一个简单窗口"        
+
+//        JFrame  f = new JFrame("一个简单窗口");
+//
+//        //设置窗体左上角与显示屏左上角的坐标，     
+//        f.setLocation(300,300);           //离显示屏上边缘300像素，里显示屏左边缘300像素
+//
+//        f.setSize(300,200);            //设置窗体的大小为300*200像素大小
+//
+//        f.setResizable(false);       //设置窗体是否可以调整大小，参数为布尔值
+//
+//        //设置窗体可见，没有该语句，窗体将不可见，此语句必须有，否则没有界面就没有如何意义了
+//        f.setVisible( true);   
+//
+//        //用户单击窗口的关闭按钮时程序执行的操作
+//        f.setDefaultCloseOperation(f.EXIT_ON_CLOSE);
+        
+        
+        
+        JFrame window1 = new JFrame("窗口A");//创建带标题的窗口
+        JFrame window2 = new JFrame("窗口B");
+        window1.setBounds(600, 100, 180, 100);//左，上，宽，高
+        window2.setBounds(260, 100, 180, 100);
+        window1.setVisible(true);
+        window2.setVisible(true);
+        window1.setDefaultCloseOperation(window1.DISPOSE_ON_CLOSE);
+        window2.setDefaultCloseOperation(window2.EXIT_ON_CLOSE);
+	}
+}

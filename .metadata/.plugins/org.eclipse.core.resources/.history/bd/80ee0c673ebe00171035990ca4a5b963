@@ -1,0 +1,43 @@
+package learn_jframe;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class MyJrame extends JFrame {
+	
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	private JPanel myPane;  
+    private JButton jb1;  
+    private JButton jb2;  
+    private JLabel jl1;  
+    private JLabel jl2;  
+      
+    public myFrame (String s){  
+        super(s);  
+        setSize(400,450);  
+        setLocationRelativeTo(null);  
+          
+        myPane=new JPanel();  
+        setContentPane(myPane);  
+        myPane.setBackground(Color.RED);  
+          
+        jb1=new JButton("a");  
+        jb2=new JButton("b");  
+        jl1=new JLabel("A");  
+        jl2=new JLabel("B");  
+          
+        myPane.add(jb1);  
+        myPane.add(jb2);  
+        myPane.add(jl1);  
+        myPane.add(jl2);  
+          
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  
+        setVisible(true);  
+    }  
+}

@@ -60,3 +60,6 @@ semanticHighlighting.typedef.color=103,140,177
 semanticHighlighting.typedef.enabled=true
 sourceHoverBackgroundColor=255,255,255
 sourceHoverBackgroundColor.SystemDefault=false
+spelling_locale_initialized=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

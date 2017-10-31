@@ -1,0 +1,56 @@
+package learn_jframe;
+
+import java.awt.Container;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class With_Lienster implements ActionListener {
+
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		// TODO Auto-generated method stub
+		JFrame newf = new JFrame();// 产生一个没有标题的JFrame
+		newf.setSize(200, 200);
+		newf.setVisible(true);;
+		System.out.println("Clicked!");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new With_Lienster();
+	}
+	
+	public With_Lienster() {
+		JFrame f = new JFrame("JFrameDemo");
+		/*
+		 * 我们要在JFrame中加入其他组件必须取得Content Pane,然后再加入组件到此Content Pane中。
+		 * 相对于AWT，若要在AWT中的Frame加入某一个组件只要直接调用add()方法即可，不需要先取得Content
+		 * Pane再加入组件。
+		 * 
+		 * Swing这样的做法似乎多了一道手续，却带来更强大、更有弹性的
+		 * 功能，原因就在于Swing的JFrame具有层次(Layer)的概念,可以让你在JFrame中放入的组件不
+		 * 会造成混乱。例如当一个JFrame有按钮(JButton)、菜单(JMenu)、快速菜单(Pop-up menu)、
+		 * 工具栏(Toolbar)与工具栏符号提示(Tool tip)时，到底哪个组件应该摆在什么组件上面或
+		 * 下面，JFrame都有办法处理。以后我们再讨论这个问题。
+		 */
+		
+		Container contentPane = f.getContentPane();
+		JButton b = new JButton("Click me to get new Window");
+		b.addActionListener(this);
+		contentPane.add(b);
+		f.pack();
+		f.setVisible(true);;// 使JFrame变成可看见的(Visible)
+		
+		f.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent e) {
+				System.exit(0);
+			}
+		});//setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+
+}

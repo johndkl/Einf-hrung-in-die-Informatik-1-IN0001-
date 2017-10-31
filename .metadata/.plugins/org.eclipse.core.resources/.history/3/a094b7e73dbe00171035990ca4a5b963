@@ -1,0 +1,17 @@
+package learn_jframe;
+
+import javax.swing.JFrame;
+
+public class First_Jframe {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		JFrame frm=new JFrame("This is a test!");             //实例化一个窗体  
+        frm.setSize(400, 800);                                //设置大小  
+        frm.setLocation(150, 150);                            //设置窗体位置  
+          
+        frm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);   //设置默认关闭操作  
+        frm.setVisible(true);                                 //设置是否可见  
+	}
+
+}
