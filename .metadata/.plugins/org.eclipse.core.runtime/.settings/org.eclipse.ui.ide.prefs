@@ -1,6 +1,16 @@
+<<<<<<< HEAD
 EXIT_PROMPT_ON_CLOSE_LAST_WINDOW=false
 PROBLEMS_FILTERS_MIGRATE=true
 eclipse.preferences.version=1
 platformState=1494140006752
 quickStart=false
 tipsAndTricks=false
+||||||| merged common ancestors
+=======
+EXIT_PROMPT_ON_CLOSE_LAST_WINDOW=false
+PROBLEMS_FILTERS_MIGRATE=true
+eclipse.preferences.version=1
+platformState=1494162665403
+quickStart=false
+tipsAndTricks=false
+>>>>>>> 96cb692fd66f906a68113fa2ee2b1b168ed5d5f8

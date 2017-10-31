@@ -1,0 +1,11 @@
+package Blatt2;
+
+public class Aufgabe27 extends MiniJava{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n = read();
+		//write("Hi");
+	}
+
+}
