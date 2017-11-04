@@ -11,6 +11,7 @@ public class Meiern extends MiniJava {
 
     number = 1;
     
+    //!!!
     while (number > lastNumber) {
 	      lastNumber = number;
 	
@@ -36,7 +37,8 @@ public class Meiern extends MiniJava {
 	        // 21 => "Meier"
 	        number = number * 1000;
 	      }
-	
+	      
+	      //!!!
 	      output = number;
 	      while (output > 100) {
 	        output = output / 10;
@@ -46,7 +48,8 @@ public class Meiern extends MiniJava {
 	      } else {
 	        write("Computer wuerfelt " + output);
 	      }
-	
+	      
+	      //!!!
 	      // Naechster Spieler:
 	      // 0 is for me, 1 is for the computer
 	      playerNumber = 1 - playerNumber;

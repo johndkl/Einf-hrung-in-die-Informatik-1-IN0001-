@@ -1,0 +1,43 @@
+package Blatt2;
+
+import Blatt1.MiniJava;
+
+public class Meiern_My_Try extends MiniJava {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int first, second;
+		int player;
+		int lasttime, thistime;
+		
+		lasttime = 0;
+		thistime = 1;
+		player = 1;
+		
+		while(lasttime < thistime) {
+			lasttime = thistime;
+			
+			int output;
+			first = dice();
+			second = dice();
+			if (first > second) {
+				output = first * 10 + second;
+			} else
+				output = second * 10 + first;
+			
+			int score;
+			if (output == 21)
+				score = output * 100;
+			if (first == second) 
+				score = output * 10;
+			
+			if(player == 1) {
+				write("Your die is " + output);
+			} else
+				write("Computer has " + output);
+			
+			player = 1- player;
+		}
+	}
+
+}

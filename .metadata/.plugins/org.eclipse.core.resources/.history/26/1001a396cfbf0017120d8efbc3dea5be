@@ -1,0 +1,20 @@
+package Blatt2;
+
+import Blatt1.MiniJava;
+
+public class Meiern_My_Try extends MiniJava {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int first, second;
+		int player;
+		int lasttime, thistime;
+		
+		lasttime = 0;
+		thistime = 1;
+		player = 1;
+		
+		while()
+	}
+
+}
