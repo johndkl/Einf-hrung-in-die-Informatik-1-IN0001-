@@ -1,0 +1,10 @@
+package Blatt3;
+
+public class Aufgabe3_8 extends MiniJava {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

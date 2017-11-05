@@ -1,0 +1,20 @@
+package Blatt3;
+
+public class Aufgabe3_8 extends MiniJava {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n = readInt("Was für eine positive Zahl moechten Sie eingeben?");
+	    while (n <= 0) {
+	    	n = readInt("Ungültige Eingabe! Die Zahl muss postiv sein!");
+	    }
+	    int copy = n;
+	    int length = 0;
+	    while (copy > 0) {
+	    	copy = copy / 10;
+	    	length++;
+	    }
+	    writeLineConsole(i);
+	}
+
+}

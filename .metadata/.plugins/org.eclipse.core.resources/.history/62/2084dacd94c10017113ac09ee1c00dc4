@@ -1,0 +1,16 @@
+package Blatt3;
+
+public class Aufgabe3_7_1 extends MiniJava {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		  int eingaben = readInt("Wie viele Zahlen moechten Sie eingeben?");
+		    if (eingaben < 1) {
+		      return;
+		    }
+
+		    int[] zahlen = new int[eingaben];
+
+	}
+
+}
